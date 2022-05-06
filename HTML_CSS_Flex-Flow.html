@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> :: Fundamentos - Flex Flow :: </title>
+    <style>
+        body {
+        background: gainsboro;
+        margin: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+        .flex-container{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: #FF8600;
+            border: 2px solid #370C70;
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .coluna {
+            height: 200px;              
+        }
+
+        .item{
+            background-color: #4B1196;
+            margin: 5px;
+            color: #FFFFFF;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);            
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            font-size: large;
+            border-radius: 7px;
+        }
+        .wrap{
+            flex-flow: row wrap;
+        }
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+        .r-nowrap{
+            flex-flow: row-reverse  nowrap;
+        }
+        .r-wrap{
+            flex-flow: row-reverse  wrap;
+        }
+        .rw-reverse{
+            flex-flow: column-reverse  wrap-reverse;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h3>SPREAD - Bootcamp </h3>
+    <p>Aluno: Anderson Dallmann <br>
+    Data: 30/04/2022 <br>
+    Plataforma: <strong>Dio.me</strong> | 
+    HTML5 | CSS3 - Posicionando elementos com Flexbox em CSS
+    Fundamentos - Flex Flow</p>
+
+    <h1>Default: row nowrap</h1>
+        <div class="flex-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>  
+        
+        <h1>Wrap</h1>
+        <div class="flex-container wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>  
+        <h1>Wrap-Reverse</h1>
+        <div class="flex-container wrap-reverse">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+        </div>  
+        <h1>Row-reverse nowrap</h1>
+            <div class="flex-container r-nowrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>  
+        </div>  
+        <h1>Row-reverse wrap</h1>
+            <div class="flex-container r-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+            </div>  
+        <h1>Row-reverse wrap-reverse</h1>
+            <div class="flex-container rw-reverse coluna">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">10</div>
+            </div>  
+        
+    </body>
+    </html>

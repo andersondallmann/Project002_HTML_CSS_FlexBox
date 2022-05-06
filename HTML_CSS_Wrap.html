@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - Flex Wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 500px;
+        }
+
+        .item {
+            font-size: 24px;
+            height: 30%;
+            text-align: center;
+            margin: 3px;
+            padding: 2px;
+            width: 100px;
+            line-height: 50px;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        .blue{
+            background-color: rgb(51, 51, 206);
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: rgb(228, 101, 101);
+        }
+    </style>
+
+</head>
+<body>
+    <h3>SPREAD - Bootcamp </h3>
+    <p>Aluno: Anderson Dallmann <br>
+    Data: 30/04/2022 <br>
+    Plataforma: Dio.me <br>
+    HTML5 | CSS3 - Posicionando elementos com Flexbox em CSS
+    Fundamentos - Flex Wrap</p>
+
+    <h1>No Wrap</h1>
+        <div class="flex-container bg">
+            <div class="item blue">1</div>
+            <div class="item orange">2</div>
+            <div class="item green">3</div>
+            <div class="item orange">4</div>
+        </div>
+
+        <!--Wrap-->
+        
+        <h1> Wrap</h1>
+        <div class="flex-container wrap">
+            <div class="item orange">A</div>
+            <div class="item blue">B</div>
+            <div class="item green">C</div>
+            <div class="item red">D</div>
+        </div>
+        
+        <!--Wrap Reverse -->
+<h1> Wrap-Reverse</h1>
+        <div class="flex-container wrap-reverse">
+            <div class="item orange">A</div>
+            <div class="item blue">B</div>
+            <div class="item green">C</div>
+            <div class="item red">D</div>
+            <div class="item orange">E</div>
+            <div class="item blue">F</div>
+            <div class="item green">G</div>
+            <div class="item red">H</div>
+        </div>
+
+</body>
+</html>
